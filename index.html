@@ -3,10 +3,60 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/ff9d42835b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>My Project - App</title>
 </head>
 <body>
 
+	<header>
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-auto">
+					<h1>MyOrderNow</h1>					
+				</div>
+				<div class="col-auto">
+					<div class="avatar-container" data-bs-toggle="modal" data-bs-target="#profileOptions">
+						<img src="img/avatar.jpg" alt="">
+						<i class="fa-solid fa-gear"></i>						
+					</div>
+				</div>
+			</div>			
+		</div>
+
+		<div class="modal fade" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5">Opciones</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<ul class="profile-option-list">
+							<li>
+								<a href="#"><i class="fas fa-user"> Mi perfil</i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-map-marker-alt"> Mis direcciones</i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-credit-card"> Mis tarjetas</i></a>
+							</li>
+							<li>
+								<a href="#" class="text-danger"><i class="fas fa-times-circle"> Cerrar sesión</i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<script src="js/jquery.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
